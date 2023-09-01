@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Css -->
+
+    <link rel="stylesheet" href="/bootstrap-5.3.1-dist/css/bootstrap.min.css" />
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .tag-p {
+            margin-top: -9px;
+            color: rgb(151, 151, 151);
+        }
+
+        @media (max-width: 932px){
+        .display-none {
+            display: none !important;
+        }
+        }
+
+        .daftar {
+            text-decoration: none;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="row m-0 h-100">
+
+        <div class="col p-0 d-flex justify-content-center align-items-center display-none">
+            <img src="/img/login.svg" class="w-75 p-75">
+        </div>
+
+
+    <div class="col p-0 d-flex justify-content-center align-items-center">
+        <form class="w-75">
+            <h2 class="form-label">Sign In</h2>
+            <p class="tag-p">find your best ever meal.</p>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+                >Email address</label>
+            <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+            />
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+            >
+        </div>
+            <button type="submit" class="w-100 btn btn-primary">Submit</button>
+            <br>
+            <br>
+            <p class="col p-0 d-flex justify-content-center align-items-center">Don't have an account? <a href="register.html" class="daftar">Sign Up</a></p>
+        </form>
+    </div>
+    </div>
+    <script src="/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
